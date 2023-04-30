@@ -1,7 +1,7 @@
 import pytest
-from models import Order, Status
-from validators import validate_criterion
-from main import app
+from .models import Order, Status
+from .validators import validate_criterion
+from .main import app
 from fastapi.testclient import TestClient
 
 # Testing Order model

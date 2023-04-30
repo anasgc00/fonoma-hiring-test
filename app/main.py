@@ -2,8 +2,8 @@ from typing import Annotated
 from fastapi import Body, FastAPI, HTTPException, Response
 
 
-from models import Order
-from validators import validate_criterion
+from .models import Order
+from .validators import validate_criterion
 
 app = FastAPI()
 
