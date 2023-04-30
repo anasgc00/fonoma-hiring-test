@@ -13,11 +13,6 @@ async def root():
     return {"message": "Fonoma hiring test"}
 
 
-@app.post("/test")
-async def test(order: Order):
-    return order
-
-
 @app.post("/solution")
 async def process_orders(
     orders: list[Order],
